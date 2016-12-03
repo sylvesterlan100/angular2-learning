@@ -1,0 +1,5 @@
+
+When using the [src] or [`name`] syntax,
+Updating the property value, not the attribute value!
+
+The attribute value is a one time initialization.
