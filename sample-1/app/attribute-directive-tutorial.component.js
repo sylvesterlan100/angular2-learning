@@ -9,18 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var AttributeDirectiveTutorialComponent = (function () {
+    function AttributeDirectiveTutorialComponent() {
     }
-    AppComponent = __decorate([
+    AttributeDirectiveTutorialComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h1>Hello World</h1>\n                <h4>Header 4 from app component</h4>\n                <hr>\n                <attribute-directive-tutorial></attribute-directive-tutorial>\n                <hr>\n                <structure-tutorial></structure-tutorial>\n                <hr>\n                <form-tutorial></form-tutorial>\n                <hr>\n                <my-tutorial></my-tutorial>\n            ",
-            styles: ["h4{\n    color: blue\n  }"]
+            selector: 'attribute-directive-tutorial',
+            template: ''
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AttributeDirectiveTutorialComponent);
+    return AttributeDirectiveTutorialComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AttributeDirectiveTutorialComponent = AttributeDirectiveTutorialComponent;
+//# sourceMappingURL=attribute-directive-tutorial.component.js.map

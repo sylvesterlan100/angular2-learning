@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var FormTutorialsComponent = (function () {
+    function FormTutorialsComponent() {
+        this.title = "Form Tutorial";
     }
-    AppComponent = __decorate([
+    FormTutorialsComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h1>Hello World</h1>\n                <h4>Header 4 from app component</h4>\n                <hr>\n                <attribute-directive-tutorial></attribute-directive-tutorial>\n                <hr>\n                <structure-tutorial></structure-tutorial>\n                <hr>\n                <form-tutorial></form-tutorial>\n                <hr>\n                <my-tutorial></my-tutorial>\n            ",
-            styles: ["h4{\n    color: blue\n  }"]
+            selector: 'form-tutorial',
+            template: "<h2>{{title}}</h2>\n        <input type=\"text\" [(ngModel)]=\"fName\">\n        <input type=\"text\" [(ngModel)]=\"lName\">\n        <br>\n        Full name: {{fName || '-'}} {{lName || '-'}}\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], FormTutorialsComponent);
+    return FormTutorialsComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.FormTutorialsComponent = FormTutorialsComponent;
+//# sourceMappingURL=form-tutorial.component.js.map

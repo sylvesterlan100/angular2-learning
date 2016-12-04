@@ -8,18 +8,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// Module decorator
 var core_1 = require('@angular/core');
+// Functional imports
 var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
+// Component imports
 var app_component_1 = require('./app.component');
+var attribute_directive_tutorial_component_1 = require('./attribute-directive-tutorial.component');
+var form_tutorial_component_1 = require('./form-tutorial.component');
+var structure_tutorial_component_1 = require('./structure-tutorial.component');
 var tutorial_component_1 = require('./tutorial.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, tutorial_component_1.TutorialsComponent],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                attribute_directive_tutorial_component_1.AttributeDirectiveTutorialComponent,
+                form_tutorial_component_1.FormTutorialsComponent,
+                structure_tutorial_component_1.StructureTutorialsComponent,
+                tutorial_component_1.TutorialsComponent
+            ],
+            bootstrap: [
+                app_component_1.AppComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
