@@ -11,11 +11,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AttributeDirectiveTutorialComponent = (function () {
     function AttributeDirectiveTutorialComponent() {
+        this.title = "Attribute Directive Tutorial";
+        this.cOne = true;
+        this.cTwo = true;
+        this.style = 'italic';
+        this.size = '20px';
     }
+    AttributeDirectiveTutorialComponent.prototype.toggle = function () {
+        this.cTwo = !this.cTwo;
+    };
     AttributeDirectiveTutorialComponent = __decorate([
         core_1.Component({
             selector: 'attribute-directive-tutorial',
-            template: ''
+            template: "\n        <h2>{{title}}</h2>\n        <p [ngClass]=\"{classOne: cOne, classTwo: cTwo}\" (click)=\"cOne = !cOne;\" [ngStyle]=\"{'font-style':style, 'font-size': size}\">\n            ngClass Paragraph\n        </p>\n        <button (click)=\"toggle()\">Toggle</button>\n    ",
+            styles: ["\n        .classOne{color: yellow}\n        .classTwo{background-color: black}\n    "]
         }), 
         __metadata('design:paramtypes', [])
     ], AttributeDirectiveTutorialComponent);
